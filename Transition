@@ -1,0 +1,18 @@
+use_synth :dark_ambience
+
+use_bpm 88
+
+define :play_phrase do
+  play_pattern_timed [72, 70, 72, 67, 65, 70, 62, 60], #These notes are from Clocks by coldplay
+    [0.25, 0.25, 0.5, 0.25, 0.5, 0.5, 0.25, 0.25]
+end
+
+# this thread plays the phrase consistently
+with_fx :pan, pan: -0.7 do
+  in_thread(name: :steady) do
+    40.times do
+      play_phrase
+      sleep 0.25
+    end
+  end
+end
