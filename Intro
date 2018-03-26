@@ -1,0 +1,9 @@
+#Rogue one audio file is my intro starts off with siren sound (audio sample 1)
+
+audio = "C:/Users/christopher_torres/Desktop/rogue_one_siren.wav"
+1.times do
+  sample audio
+  sleep 6
+end
+
+
