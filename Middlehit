@@ -1,0 +1,151 @@
+
+
+use_bpm 68
+use_synth :piano
+define:papa do
+  play:a1
+  play:e2
+  play:a2
+end
+define:bass do
+  play:c3
+  play:g2
+  play:c2
+end
+
+live_loop:bass do
+  5.times do
+    play bass, decay:2
+    sleep 4
+  end
+  1.times do
+    play:f3
+    play:c3
+    play:f2
+    sleep 2
+    play:a2
+    sleep 1
+    play:c3
+    sleep 1
+    play:c3
+    sleep 2
+    play:d3
+    play:b2
+    sleep 2
+    play :r
+    sleep 2
+  end
+  1.times do
+    play:g3
+    play:e3
+    play:c3
+    sleep 2
+    play:c4
+    play:a3
+    play:e3
+    play:c3
+    sleep 6
+    play:c4
+    play:a3
+    play:e3
+    play:c3
+    sleep 2
+    play:g3
+    play:e3
+    play:c3
+    play:g2
+    sleep 4
+    play:g3
+    play:e3
+    play:c3
+    play:g2
+    sleep 2
+    play:d3
+    play:e2
+    play:g2
+    sleep 2
+    play:c3
+    play:g2
+    play:c2
+    sleep 6
+    play:g3
+    play:d3
+    play:g2
+    sleep 2
+    play :r
+    sleep 2
+    
+  end
+end
+
+#sheet music for 
+1.times do
+  play:g2, decay:1, amp:2, sustain:2
+  sleep 1
+  play:c3, decay:2, amp:2, sustain:2
+  sleep 2
+  play:d3, decay:1, amp:2, sustain:2
+  sleep 1
+  play:e3, amp:1, sustain:2
+  sleep 0.25
+  play:f3, amp:1, sustain:2
+  sleep 0.25
+  play:e3, decay:2, amp:2, sustain:2
+  sleep 2
+  play:g2, decay:1, amp:2, sustain:2
+  sleep 1
+  play:g2, decay:1, amp:2, sustain:2
+  sleep 0.5
+  play:c3, decay:1, amp:2, sustain:2
+  sleep 1
+  play:d3, amp:2, sustain:2
+  sleep 0.5
+  play:e3, amp:2, sustain:2
+  sleep 0.5
+  play:g2, amp:2, sustain:2
+  sleep 0.5
+  play:e3, amp:2, sustain:2
+  sleep 0.25
+  play:c3, amp:2, sustain:2
+  sleep 0.25
+  play:g3, amp:2, sustain:2
+  sleep 0.5
+  play:f3, decay:1, amp:2, sustain:2
+  sleep 2
+  play:g3, decay:1, amp:2, sustain:2
+  sleep 1
+  play:c3, decay:1, amp:2, sustain:2
+  sleep 1
+  play:d3, amp:2, sustain:2
+  sleep 0.25
+  play:e3, amp:2, sustain:2
+  sleep 0.25
+  play:c3, amp:2, sustain:2
+  sleep 0.25
+  play:g3, amp:2, sustain:2
+  sleep 0.5
+  play:e3, amp:2, sustain:2
+  sleep 0.5
+  play:c4, decay:1, amp:2, sustain:2
+  sleep 1
+  play:c3, decay:1, amp:2, sustain:2
+  sleep 1
+  play:e3, amp:2, sustain:2
+  sleep 0.25
+  play:d3, amp:2, sustain:2
+  sleep 0.25
+  play:c3, amp:2, sustain:2
+  sleep 0.5
+  play:g3, decay:1, amp:2, sustain:2
+  sleep 1
+  play:e3, amp:2, sustain:2
+  sleep 0.25
+  play:c3, amp:2, sustain:2
+  sleep 0.5
+  play:g2, decay:1, amp:2, sustain:2
+  sleep 1
+  play:g2, amp:2, sustain:2
+  sleep 0.5
+  play:g2, amp:2, sustain:2
+  sleep 0.5
+end
