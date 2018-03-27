@@ -16,16 +16,15 @@ define:papa do
   play:a2
 end
 #when it sees bass it will play all these in order
-define:bass do
-  play:c3
-  play:g2
-  play:c2
-end
-
-live_loop:bass do
-  5.times do
-    play bass, decay:2
-    sleep 4
+define:bass do |a,b,c,d|
+  live_loop:bass do
+    5.times do
+      play a
+      play b
+      play c
+      sleep d
+    end
+    bass :c3,:g2,:c2, 4
   end
   1.times do
     sleep 10000000000000
